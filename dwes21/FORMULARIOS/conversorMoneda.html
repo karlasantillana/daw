@@ -1,0 +1,25 @@
+<html>
+	<head>
+        <meta charset="UTF-8">
+        <title>--Formularios--</title>
+	</head>
+		
+	<body>
+        <form method="post" action="conversorMoneda.php"> <!--enlazo el doc .php-->
+            <p>Ingresa la cantidad <input type="double" name="cantidad">
+            </p>
+
+            <!--desplegable-->
+            <select name="moneda">
+                <option value="1">Bitcoin</option>
+                <option value="2">Dólar americano</option>
+                <option value="3">Libra esterlina</option>
+                <option value="4">Yen japonés</option>
+            </select>
+
+            <!--botón de Enviar-->
+            <input type="submit" name="Enviar" value="Enviar"/>
+        </form>
+
+        </body>
+</html>

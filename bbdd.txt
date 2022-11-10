@@ -1,0 +1,7 @@
+localhost/phpmyadmin/
+
+Para importar bbdd:
+Nueva > 
+"Nombre de la bbdd" > Crear > 
+pestaña Importar > Seleccionar archivo > Importar
+

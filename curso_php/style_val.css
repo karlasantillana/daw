@@ -1,0 +1,26 @@
+        /* styles para el formulario */
+        table {
+            border: blueviolet 2px dashed;
+            width: 200px;
+            background-color: lightpink;
+            margin: auto;
+        }
+
+        input[name=enviando] {
+            cursor: pointer;
+            margin: 0 auto;
+        }
+
+        .celdaboton {
+            text-align: center;
+        }
+
+
+        /* styles para la respuesta de la función */
+        .no_validado {
+            color: red;
+        }
+
+        .validado {
+            color: green;
+        }
