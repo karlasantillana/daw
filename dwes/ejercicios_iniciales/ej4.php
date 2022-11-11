@@ -7,6 +7,11 @@
     <title>Document</title>
 </head>
 <body>
+<!-- Realiza un programa en php que calcule el sueldo neto de un trabajador al cual se le 
+aplica una retención del 22%. Supón que el sueldo bruto son 2750€. Mostrar por 
+pantalla el sueldo inicial, el impuesto aplicado y el sueldo neto. Dar formato html a los 
+resultados obtenidos. -->
+
     <?php
     
         $bruto = 3750;
