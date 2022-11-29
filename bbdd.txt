@@ -1,7 +1,14 @@
 localhost/phpmyadmin/
 
+
 Para importar bbdd:
 Nueva > 
 "Nombre de la bbdd" > Crear > 
 pestaña Importar > Seleccionar archivo > Importar
+
+
+SQL
+DROP DATABASE nombrebbdd; -->Eliminar una bbdd (o manual en "Operaciones")
+DROP TABLE nombretabla; -->Eliminar una tabla (o manual en "Operaciones")
+
 

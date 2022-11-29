@@ -1,0 +1,64 @@
+Para identificar un equipo: MAC(tarheta de red)
+
+HTTP(incluye http https)
+características:
+-no controla estados
+-trabaja con petición respuesta (no se trabaja si no ha salido una petición al servidor):
+en vez de conectar varias veces 
+    solucionar problemas de estados:
+    cookies-->solo puede acceder el propio servidor ej:páginas visitadas, para getionar sesiones
+    sesiones
+
+    caché-->capa previa de salir q me permite No hacer petición si no es necesario.
+            se encuentra en la cabecera
+            ayax: mezcla entre voy al servidor y estoy aquí (búsqueda inteligente)
+
+    campos ocultos: header(me permite q sin el usuario pulse el botón me lleva a la página), enlace de tipo <a>
+
+partes del mensaje
+
+códigos de error
+
+HTTPS
+2 características: 
+integridad--> la información es tal cual
+confidencialidad--> cifrado de paquetes en la transmicón de cable
+
+ssl
+
+Servicios que se puede encontrar en un servidor
+dns
+proxy-->función: permite hacer balanceo de carga. Seguridad: asl permite capar la info q ven los usuarios
+dhtp-->dentro de una red local(privadas)
+
+protocolo peticiones, si la carga no ha cambiado mucho, no sale la petición
+del Servidor siempre da un paquete de vuelta(respuesta) aunque sea KO sin el cuerpo de la página.
+
+diferencia entre: server tradicional y cloud
+
+iaas
+saas
+paas
+
+varios dominios pueden estar conectados a un mismo host
+
+servicios en el servidor (lo puedo gestionar yo)
+-configurar direcciones
+-añadir seguridad (ej:ataques de código)
+-añadir módulos ssl
+-añadir pasarela de pago
+
+
+(no puedo gestionar yo)
+
+internet trabaja con protocolo tcp/ip
+
+Evolución de la Web
+web 1.0 --> (estático) ej: información de contacto 
+web 2.0 --> (contenidos dinámicos): código que modifica mi página en base a lo que quiero
+    redes sociales (impieza siendo meramente de ocio y s eha convertido en una de las herramientas de marketing), SOA, 
+    RIA: se lleva el concepto de escritorio a la web 
+
+web 3.0 --> web inteligente(machineilearning),
+        (web semántica): configurar mediante json o xml con info de otras web
+

@@ -15,7 +15,7 @@
               $number = ($_POST["number"]);
 
               while($number >0){
-                      echo “Los bucles son fáciles”;
+                      echo "Los bucles son fáciles";
                       $number++ ;
               }            
         }

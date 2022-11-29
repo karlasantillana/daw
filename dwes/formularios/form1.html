@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
-    <?php
+    <form action="form1.php" method="post" name="datos" id="datos">
 
-        $palabra = "KARLA";
-        $palabra2 = "karla";
+        <label for="veces">¿Cuántas veces?</label>
+        <input type="text" name="veces" id="veces">
 
-        echo (strtolower($palabra));
-
-        echo "<br>";
-
-        echo (strtoupper($palabra2));
-    ?>
+        <input type="submit" name="enviando" id="enviando" value="Enviar">
+    </form>
 </body>
-
 </html>
