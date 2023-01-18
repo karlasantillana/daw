@@ -3,22 +3,28 @@
     class Coche {
 
         //propiedades = atributos del objeto coche
-        var $ruedas;
+        protected $ruedas;
 
         var $color;
 
         var $motor;
 
         //método Constructor
-        //es donde se indica el estado inicial de los objetos de tipo Coche
+        //es donde se indica el ESTADO INICIAL de los objetos de tipo Coche
         function __construct(){
-            //$this -> indica que se refiere a la clase Coche
+            //$this -> indica que hace referencia a la clase Coche
             $this -> ruedas = 4;
 
             $this -> color = ""; //estado inicial sin definir
 
             $this -> motor = 1600; 
 
+        }
+
+        //////////getter (permite ver las propiedades del objeto de la clase)////////
+        function get_ruedas(){ ///función getter
+
+            return $this->ruedas;
         }
 
         //métodos = función(dentro de una clase)

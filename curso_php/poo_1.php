@@ -16,9 +16,13 @@
 
 
         //ej:quiero ver las ruedas de coche y camion
-        echo "El Ferrari tiene " . $ferrari->ruedas . " ruedas <br>";
-        echo "El Toyota tiene " . $toyota->ruedas . " ruedas <br>";
+    //    echo "El Ferrari tiene " . $ferrari->ruedas . " ruedas <br>";
+    //    echo "El Toyota tiene " . $toyota->ruedas . " ruedas <br>";
 
+        echo "El Ferrari tiene " . $ferrari->get_ruedas() . " ruedas <br>";
+        echo "El Toyota tiene " . $toyota->get_ruedas() . " ruedas <br>";        
+
+/*
         echo "<br>OBJETO TIPO COCHE<br>";
         $ferrari->establecer_color("verde" , "ferrari");
 
@@ -34,7 +38,9 @@
 
         
         $toyota->arrancar();
-        
+*/        
+
+
     ?>
 </body>
 </html>
