@@ -5,9 +5,9 @@
         //propiedades = atributos del objeto coche
         protected $ruedas;
 
-        var $color;
+        var $color; //VAR por defecto es modificador de acceso PUBLIC
 
-        var $motor;
+        protected $motor;
 
         //método Constructor
         //es donde se indica el ESTADO INICIAL de los objetos de tipo Coche
@@ -21,11 +21,20 @@
 
         }
 
-        //////////getter (permite ver las propiedades del objeto de la clase)////////
+        ////////// (permite ver las propiedades del objeto de la clase)////////
         function get_ruedas(){ ///función getter
 
             return $this->ruedas;
         }
+
+
+        function get_motor(){
+
+            return $this->motor;
+
+        }
+        //////////
+
 
         //métodos = función(dentro de una clase)
         function arrancar(){
@@ -47,7 +56,7 @@
         }
 
         //método con parámetro  //para el color sin definir en el estado inicial del constructor
-        function establecer_color($color_coche , $nombre_coche){
+        function establecer_color($color_coche , $nombre_coche){ //MÉTODO SETTER
 
             $this->color = $color_coche; //asigno al atributo color lo que he guardado en el parámetro $color_coche
 

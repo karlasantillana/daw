@@ -19,9 +19,11 @@
     //    echo "El Ferrari tiene " . $ferrari->ruedas . " ruedas <br>";
     //    echo "El Toyota tiene " . $toyota->ruedas . " ruedas <br>";
 
-        echo "El Ferrari tiene " . $ferrari->get_ruedas() . " ruedas <br>";
-        echo "El Toyota tiene " . $toyota->get_ruedas() . " ruedas <br>";        
+        echo "El Ferrari tiene " . $ferrari->get_ruedas() . " ruedas. <br>";
+        echo "El Toyota tiene " . $toyota->get_ruedas() . " ruedas. <br>";           
 
+        echo "El Ferrari tiene un motor de " . $ferrari->get_motor() . " centímetros cúbicos. <br>";
+        echo "El Toyota tiene un motor de " . $toyota->get_motor() . " centímetro cúbicos. <br>";
 /*
         echo "<br>OBJETO TIPO COCHE<br>";
         $ferrari->establecer_color("verde" , "ferrari");
