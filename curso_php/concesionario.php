@@ -4,7 +4,7 @@
 Concesionario: vende vehículos con precios 
 según la gama, 
 según extras(con climatizador, navegador gps, tapicería cuero),
-añadiendo una ayuda del gobierno que que se le resta a al precio final independientemente del tipo de coche que sea
+añadiendo una ayuda del gobierno que se le resta al precio final independientemente del tipo de coche que sea
 (opción1: crear una variable static la cual se comparte con todas las instancias de la clase)
 */
 
@@ -12,8 +12,8 @@ añadiendo una ayuda del gobierno que que se le resta a al precio final independ
 
         private $precio_base;
 
-        static $ayuda=4500; //la variable o campo static pertenece a la clase Compra_vehiculo
-
+        //private static $ayuda=4500; ////variable (= campo) static
+        private static $ayuda=0; 
 
         function __construct($gama){
 
@@ -34,6 +34,16 @@ añadiendo una ayuda del gobierno que que se le resta a al precio final independ
 
         }//fin construct
 
+        //MÉTODO STATIC si el descuento se hiciese por épocas
+        static function descuento_gobierno(){       
+
+            if(date("d-m-Y") >"20-01-2023"){
+                
+                self::$ayuda=4500;
+
+            }//fin condición
+
+        }//fin método static
 
         //MÉTODOS
         function climatizador(){
@@ -72,9 +82,10 @@ añadiendo una ayuda del gobierno que que se le resta a al precio final independ
 
         function precio_final(){
 
-            $valor_final = $this-> $precio_base - 
+            $valor_final = $this->precio_base - self::$ayuda; //para usar la variable static $ayuda, tengo q usar self::
 
-            return $this->precio_base;
+        //     return $this->precio_base;
+            return $valor_final;            
 
         }//fin precio final
 

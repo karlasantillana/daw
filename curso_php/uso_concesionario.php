@@ -10,6 +10,10 @@
     <?php
         include("concesionario.php");
 
+        //para manipular y modificar el valor de la variable static $ayuda, en lugar de 4500€
+        //Compra_vehiculo::$ayuda =10000; 
+
+        Compra_vehiculo::descuento_gobierno();
 
         //INSTANCIAS
 
@@ -18,7 +22,7 @@
         
         echo $compra_Juan->precio_final();
         
-        echo "<br><br><br>";
+        echo "<br><br>";
 
 
         //Cliente 2.Un coche comprado por Antonio de gama compacto(20000 €) con extra climatizador y tapicería de cuero(color blanco)
@@ -29,7 +33,7 @@
 
         echo $compra_Antonio->precio_final();
 
-        echo "<br><br><br>";
+        echo "<br><br>";
         
         
         //Cliente 3.Un coche comprado por Ana de gama compacto(20000 €) con extra climatizador y tapicería de cuero(color rojo)
@@ -41,7 +45,7 @@
         echo $compra_Ana->precio_final();
 
 
-        
+
 
 
         
