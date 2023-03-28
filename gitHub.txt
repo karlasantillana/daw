@@ -12,3 +12,5 @@ git clone [url] --> en la máquina donde quiero clonar
 
 //en la máquina donde quiero actualizar
 --> git pull -->lo abro en la consola directamente en la carpeta de la máquina donde falta actualizar
+
+https://github.com/karlasantillana/daw.git
