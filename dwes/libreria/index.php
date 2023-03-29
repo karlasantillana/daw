@@ -14,11 +14,11 @@ e) Método de búsqueda en el array de libros o magazines por título
 
 <?php
 //objeto publisher
-$publisher1 = new Publisher(0001 , " Karla Santillana" , "calle Fuencarral 31" , 913584067 , "www.santillana.com");
+$publisher1 = new Publisher(0001 , "Karla Santillana" , "calle Fuencarral 31" , 913584067 , "www.santillana.com");
 
 //objeto book
-$book1 = new Book (20 , "Todo lo que nunca fuimos" , 352 , 16 ,    , 21 , "Alice Kellen");
+echo $book1 = new Book (20 , "Todo lo que nunca fuimos" , 352 , 16 ,   0001 , "Karla Santillana" , "calle Fuencarral 31" , 913584067 , "www.santillana.com"   , 21 , "Alice Kellen");
 
 //objeto magazine
-$magazine1 = new Maganize()
+echo $magazine1 = new Magazine(30 , "Hola" , 23 , 3 , 0002 , "Eduardo Sánchez" , "calle Bravo Murillo 42" , "913584000" , "www.eduardosanchez.es" , "tapa blanda");
 ?>
