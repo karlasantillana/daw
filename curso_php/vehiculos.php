@@ -25,7 +25,7 @@
         function get_ruedas(){ ///función getter
 
             return $this->ruedas;
-        }
+        }   
 
 
         function get_motor(){
