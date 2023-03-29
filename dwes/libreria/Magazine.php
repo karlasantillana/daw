@@ -4,8 +4,8 @@ class Magazine extends ReadingMaterial{
 
     private $additionalResources;
 
-    function __construct($id , $title , $pages , $price , $additionalResources){
-        parent::__construct($id , $title , $pages ,$price);
+    function __construct($id , $title , $pages ,$price , $idP , $nameP , $addressP , $telephoneP , $websiteP , $additionalResources){
+        parent::__construct($id , $title , $pages ,$price , $idP , $nameP , $addressP , $telephoneP , $websiteP);
         $this -> additionalResources = $additionalResources;
     }
 
@@ -18,4 +18,5 @@ class Magazine extends ReadingMaterial{
         $this-> additionalResources = $additionalResources;
     }
 }
+
 ?>

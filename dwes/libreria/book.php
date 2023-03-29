@@ -6,14 +6,14 @@
         private $authors;
     
 
-        function __construct ($id , $title , $pages ,$price , $chapters , $authors){
-            parent::__construct($id , $title , $pages ,$price);
+        function __construct ($id , $title , $pages ,$price , $idP , $nameP , $addressP , $telephoneP , $websiteP , $chapters , $authors){
+            parent::__construct($id , $title , $pages ,$price , $idP , $nameP , $addressP , $telephoneP , $websiteP);
             $this -> chapters = $chapters;
             $this -> authors = $authors;
 
         }
 
-        
+
         function get_chapthers(){
             return $this->chapters;
         }

@@ -7,15 +7,18 @@
         private $pages;
         private $price;
 
-        function __construct($id , $title , $pages , $price){
+        private $editor;
+
+        function __construct($id , $title , $pages , $price ,$idP , $nameP , $addressP , $telephoneP , $websiteP){
 
             $this -> id= $id;
             $this -> title = $title;
-            $this -> $pages = $pages;
-            $this -> $price = $price;
+            $this -> pages = $pages;
+            $this -> price = $price;
+            $this -> editor = new Publisher($idP , $nameP , $addressP , $telephoneP , $websiteP);
         }
 
-        
+
         function get_id(){
             return $this->id;
         }
