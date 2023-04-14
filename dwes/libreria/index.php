@@ -13,6 +13,10 @@ e) Método de búsqueda en el array de libros o magazines por título
 -->
 
 <?php
+include "readingMaterial.php";
+include "publisher.php";
+
+
 //objeto publisher
 $publisher1 = new Publisher(0001 , "Karla Santillana" , "calle Fuencarral 31" , 913584067 , "www.santillana.com");
 

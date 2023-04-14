@@ -7,11 +7,9 @@
     <title>arrays</title>
 </head>
 <body>
-    <?php
-    
-        
+    <?php       
         //ARRAY INDEXADO
-        
+        /*
         $semana[]="Lunes";
 
         $semana[]="Martes";
@@ -26,6 +24,15 @@
             echo $semana[$i] . "<br>";
         }
         
+        //añadir un elemeto al array indexado $semana
+        $semana[]="Viernes";
+
+        //copio el bucle debajo del nuevo elemento para que recorra el array y tenga en cuenta el nuevo elemento "viernes" 
+        for($i=0 ; $i<count($semana) ; $i++){
+
+            echo $semana[$i] . "<br>";
+        }
+        */
 
 
         //funcion array()
@@ -35,14 +42,13 @@
         echo $semana[3];
         */
 
+
         //ARRAY ASOCIATIVO
         //ej datos personales de una persona
         /*
         $datos=array("Nombre"=>"Jona" , "Apellido"=>"Paredes" , "Edad"=>36);
 
-        //$datos="Martín";
-
-        //echo $datos;
+        $datos["País"]="España";
 
         foreach($datos as $clave=>$valor){
 
@@ -50,6 +56,18 @@
         }
         */
 
+
+        //ordenar array
+        $semana = array("Lunes" , "Martes" , "Miércoles" , "Jueves");
+
+        sort($semana); //ordenar en orden alfabético
+
+        for($i=0 ; $i<count($semana) ; $i++){
+            
+            echo $semana[$i] . "<br>";
+        }
+
+    
     ?>
 </body>
 </html>
