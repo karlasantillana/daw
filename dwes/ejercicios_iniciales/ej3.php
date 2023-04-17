@@ -44,7 +44,7 @@ include -->
         echo "<br>";
 
         //MULTIPLICACIÓN
-        echo multiplicacion(4 , 2);
+        echo multiplicacion(5 , 3);
 
         echo "<br>";
 

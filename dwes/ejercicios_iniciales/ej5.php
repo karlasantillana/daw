@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>condicional</title>
-</head>
-<body>
 <!-- Realiza un programa en php que dados dos números indique cuál de dos números es el 
 mayor. Inicialmente el programa mostrará el valor de los números y a continuación 
 indicará: El número _ es mayor que el número _. -->
@@ -30,5 +21,3 @@ indicará: El número _ es mayor que el número _. -->
             echo "El número $num1 es igual a $num2";
         }
     ?>
-</body>
-</html>

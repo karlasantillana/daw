@@ -57,8 +57,13 @@
         */
 
 
-        //ordenar array
+        //sin ordenar alfabéticamente array 
         $semana = array("Lunes" , "Martes" , "Miércoles" , "Jueves");
+
+        echo "<pre>";
+        print_r($semana);
+        echo "</pre>";
+
 
         sort($semana); //ordenar en orden alfabético
 
@@ -67,6 +72,9 @@
             echo $semana[$i] . "<br>";
         }
 
+        echo "<pre>";
+        print_r($semana);
+        echo "</pre>";
     
     ?>
 </body>

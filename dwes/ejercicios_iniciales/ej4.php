@@ -14,7 +14,7 @@ resultados obtenidos. -->
 
     <?php
     
-        $bruto = 3750;
+        $bruto = 2750;
 
         $retencion = ($bruto*22)/100;
 
