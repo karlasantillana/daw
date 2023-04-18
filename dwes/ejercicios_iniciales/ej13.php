@@ -13,12 +13,22 @@ print_r ($colores);
 echo "</pre>";
 //echo in_array("rosa" , $colores); //false = 0  true = 1
 
+/*
 if (in_array("rosa" , $colores)){
     echo 'El valor rosa SÍ se encuentra almacenado en el array $colores'; //comilla simple:  ignora que $colores es una variable y lo muestra literalmente
 }else{
     echo 'El valor rosa NO se encuentra almacenado en el array $colores';
 }
+*/
+for($i=0 ; $i<count($colores) ; $i++){
 
-
+    if($i="rosa"){
+        echo "El valor rosa se encuentra almacenado en el array en la posición" ;
+    }
+}
+unset($colores[3]);
+echo "<pre>";
+print_r ($colores);
+echo "</pre>";
 
 ?>
