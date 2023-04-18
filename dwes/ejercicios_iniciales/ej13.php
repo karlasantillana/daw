@@ -20,10 +20,11 @@ if (in_array("rosa" , $colores)){
     echo 'El valor rosa NO se encuentra almacenado en el array $colores';
 }
 */
+
 for($i=0 ; $i<count($colores) ; $i++){
 
     if($i="rosa"){
-        echo "El valor rosa se encuentra almacenado en el array en la posición" ;
+        echo "El valor rosa se encuentra almacenado en el array" ;
     }
 }
 unset($colores[3]);
