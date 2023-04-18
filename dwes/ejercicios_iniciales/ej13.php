@@ -24,10 +24,12 @@ if (in_array("rosa" , $colores)){
 for($i=0 ; $i<count($colores) ; $i++){
 
     if($i="rosa"){
-        echo "El valor rosa se encuentra almacenado en el array" ;
+        echo 'El valor rosa se encuentra almacenado en el array $colores' ;
     }
 }
-unset($colores[3]);
+array_splice($colores , 3 , 1);
+//unset($colores[3]);
+
 echo "<pre>";
 print_r ($colores);
 echo "</pre>";
