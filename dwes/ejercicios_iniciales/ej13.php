@@ -20,14 +20,16 @@ if (in_array("rosa" , $colores)){
     echo 'El valor rosa NO se encuentra almacenado en el array $colores';
 }
 */
+$posicionEncontrada= 0; //contador
 
 for($i=0 ; $i<count($colores) ; $i++){
 
-    if($i="rosa"){
-        echo 'El valor rosa se encuentra almacenado en el array $colores' ;
+    if($colores[$i]=="rosa"){
+        $posicionEncontrada = $i;
+        echo 'El valor rosa se encuentra almacenado en el array $colores<br>' ;
     }
 }
-array_splice($colores , 3 , 1);
+array_splice($colores , $posicionEncontrada , 1);
 //unset($colores[3]);
 
 echo "<pre>";
