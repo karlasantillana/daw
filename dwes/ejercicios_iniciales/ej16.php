@@ -22,7 +22,7 @@ echo "</pre>";
 ////
 
 for($fila=0 ; $fila<3 ; $fila++){
-    echo $fila;
+    echo $elementos[$fila];
 
     for($col=0 ; $col<4 ; $col++){
         echo $elementos[$fila][$col];
