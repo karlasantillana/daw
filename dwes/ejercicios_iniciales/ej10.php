@@ -5,6 +5,7 @@ fibo(n) = fibo(n-1) + fibo(n-2)
 -->
     
 <?php 
+/*
     $num1 = 0;
     $num2 = 1;
     $fibonacci; //contenedor con resultado de suma
@@ -18,10 +19,10 @@ fibo(n) = fibo(n-1) + fibo(n-2)
 
         echo $fibonacci . "<br>";
     }
+*/
 
 
-
-    /* 
+    
     //$fibonacci= array(0,1);
     $fibonacci []=0;
     $fibonacci []=1;
@@ -29,10 +30,10 @@ fibo(n) = fibo(n-1) + fibo(n-2)
 
     for($i=2 ; $i<25 ; $i++){
 
-    $fibonacci[$i]= ($fibonacci[$i-1]) + ($fibonacci[$i-2]);
+    $fibonacci[$i]= ($fibonacci[$i-1]) + ($fibonacci[$i-2]); //lo que guarda es la posición mas no el elemento
 
     }
-    */
+    
 
 /*
     $num1 = 0;
@@ -47,9 +48,9 @@ fibo(n) = fibo(n-1) + fibo(n-2)
         $num2 = $next;
     }
 */
-/*
+
     echo "<pre>"; //para q se vea en orden hacia abajo y no lineal
     print_r($fibonacci); //imprimir array
     echo "</pre>";
-*/
+
 ?>

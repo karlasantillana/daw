@@ -11,26 +11,19 @@ $colores = array("azul" , "rojo" , "verde" , "rosa" , "naranja");
 echo "<pre>";
 print_r ($colores);
 echo "</pre>";
-//echo in_array("rosa" , $colores); //false = 0  true = 1
 
-/*
-if (in_array("rosa" , $colores)){
-    echo 'El valor rosa SÍ se encuentra almacenado en el array $colores'; //comilla simple:  ignora que $colores es una variable y lo muestra literalmente
-}else{
-    echo 'El valor rosa NO se encuentra almacenado en el array $colores';
-}
-*/
 $posicionEncontrada= 0; //contador
 
 for($i=0 ; $i<count($colores) ; $i++){
 
     if($colores[$i]=="rosa"){
         $posicionEncontrada = $i;
-        echo 'El valor rosa se encuentra almacenado en el array $colores<br>' ;
+        echo 'El valor rosa se encuentra almacenado en el array $colores<br>' ; //comilla simple:  ignora que $colores es una variable y lo muestra literalmente
     }
 }
-array_splice($colores , $posicionEncontrada , 1);
-//unset($colores[3]);
+//función array_splice insertar o borrar($array,posicióninsertar, 0(insertar)1(borrar),valor en dicha posicion)
+array_splice($colores , $posicionEncontrada , 1); 
+//unset($colores[3]); //elimina todo el valor incluido su índice
 
 echo "<pre>";
 print_r ($colores);
