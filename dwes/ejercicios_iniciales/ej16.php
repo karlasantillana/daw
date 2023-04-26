@@ -8,12 +8,23 @@ de la matriz se generará de manera aleatoria. Una vez generada:
 • Imprime únicamente la primera columna 
 -->
 <?php
-$elementos=array();
 
-for($i=0 ;$i<12 ; $i++){
-    $numAleatorios = rand(0,12);
-    array_push($elementos , $numAleatorios);
+/*
+for($fila=0 ;$fila<3 ; $fila++){
+    for($columna=0 ;$columna<4 ; $columna++){
+        array_push($elementos , rand(0,25));
+    }
 }
+*/
+//primero creo una lista con 12 números aleatorios
+$numeros = array();
+
+for($i=0 ; $i<12 ; $i++){
+    
+}
+
+
+
 echo "<pre>";
 print_r($elementos);
 echo "</pre>";
@@ -21,6 +32,7 @@ echo "</pre>";
 
 ////
 
+/*
 for($fila=0 ; $fila<3 ; $fila++){
     echo $elementos[$fila];
 
@@ -28,4 +40,5 @@ for($fila=0 ; $fila<3 ; $fila++){
         echo $elementos[$fila][$col];
     }
 }
+*/
 ?>

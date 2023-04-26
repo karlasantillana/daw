@@ -8,10 +8,11 @@ $alimentos=array("fruta"=>array("tropical"=>"kiwi",
                                 "vegetal"=>"coco") , 
 
                  "carne"=>array("vacuno"=>"lomo",
-                                "porcino"=>"pata"));
+                                "porcino"=>"pata")
+                );
  
 /*                                
-//quiero acceder al elemento "lomo"
+//quiero acceder y trabajar al elemento "lomo"
 echo $alimentos["carne"]["vacuno"];
 */
 
@@ -33,8 +34,6 @@ foreach($alimentos as $clave_alim =>$alim){
     foreach($alim as $claveTipo=>$valor){
         echo "$claveTipo => $valor <br>";
     }
-
-
 }
 
 // // 
