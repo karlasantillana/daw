@@ -20,14 +20,13 @@ for($fila=0 ;$fila<3 ; $fila++){
 $numeros = array();
 
 for($i=0 ; $i<12 ; $i++){
-    
+    array_push($numeros , rand(0,25));
 }
-
-
-
 echo "<pre>";
-print_r($elementos);
+print_r($numeros);
 echo "</pre>";
+
+
 
 
 ////
