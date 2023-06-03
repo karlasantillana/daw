@@ -1,13 +1,14 @@
 <?php
+/******************************conexión con PDO***************/
 
-/*
-    //creo variable, instancio clase PDO
+/* INSTRUCCIONES
+    1.creo variable, instancio clase PDO
             ARGUMENTOS: 
             //1er arg-->host con el que quiero conectar y nombre de la bbdd
             //2do arg-->nombre de usuario
             //3er arg-->password
 
-    //Conexión satisfactoria
+    2.Conexión satisfactoria
             
 */
 
