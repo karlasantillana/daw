@@ -4,19 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>conexionBBDD</title>
-
-    <style>
-        table{
-            width: 50%;
-            border: 1px dotted red;
-            margin: auto;
-        }
-    </style>
+    <title>Document</title>
 </head>
-
 <body>
 <?php
+
+    $busqueda = $_GET["buscar"];
+
     /******************************conexión con Mysqli***************/
     require("datos_conexion.php");
 
@@ -25,7 +19,7 @@
 
 
     //Consultas o query o sentencias sql
-    $consulta="SELECT * FROM PRODUCTOS WHERE PAÍSDEORIGEN ='ESPAÑA'";
+    $consulta="SELECT * FROM PRODUCTOS WHERE NOMBREARTÍCULO LIKE '%$busqueda%'";
 
     //Ejecutar la consulta con la función mysqli_query($conexion , $sql); con dos argumentos
     $resultados = mysqli_query($conexion , $consulta);
@@ -51,7 +45,6 @@
 
     //CERRAR CONEXIÓN
     mysqli_close($conexion);
-?>
+?>    
 </body>
 </html>
-
