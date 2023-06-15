@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario CSS</title>
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=VT323&display=swap" rel="stylesheet">
+    <!--  -->
+
+    <link rel="stylesheet" href="01formulario_registro.css" type="text/css" media="screen">
+
+</head>
+
+<body>
+    <h1>Eliminación de Artículos</h1>
+    <p>Rellena el formulario para añadir un artículo a la tabla PRODUCTOS de la bbdd pruebas.</p>
+
+    <div class="container">
+        <form name="form1" action="01eliminar_registro.php" method="get">
+
+            <div class="row">
+                <div class="col-30">
+                    <label>Código Artículo</label>
+                </div>
+                <div class="col-70">
+                    <input type="text" name="c_art" placeholder="Empieza por AR'num'">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-30">
+                    <label>Sección</label>
+                </div>
+                <div class="col-70">
+                    <input type="text" name="seccion" placeholder="DEPORTES o ...">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-30">
+                    <label>Nombre Artículo</label>
+                </div>
+                <div class="col-70">
+                    <input type="text" name="n_art">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-30">
+                    <label>Precio</label>
+                </div>
+                <div class="col-70">
+                    <input type="text" name="precio" placeholder="0.00">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-30">
+                    <label>Fecha</label>
+                </div>
+                <div class="col-70">
+                    <input type="text" name="fecha" placeholder="día-mes-año">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-30">
+                    <label>Importado</label>
+                </div>
+
+                <div class="col-70">
+                    <input type="text" name="importado" placeholder="VERDADERO o FALSO">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-30">
+                    <label>País de Origen</label>
+                </div>
+
+                <div class="col-70">
+                    <input type="text" name="p_orig">
+                </div>
+            </div>
+
+
+            <div class="row">
+                    <input type="submit" name="enviar" value="Enviar">
+                    <input type="reset" name="borrar" value="Borrar">
+            </div>
+
+        </form>
+
+    </div>
+</body>
+</html>

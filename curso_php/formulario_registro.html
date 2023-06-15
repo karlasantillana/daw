@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Registro</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=VT323&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+        box-sizing: border-box;
+        }
+
+        p{
+            text-align: center;
+        }
+
+        h1{
+            text-align: center;
+            color: blueviolet;
+            font-family: 'Nunito', sans-serif;
+            font-family: 'VT323', monospace;
+        }
+
+        hr{
+            width: 50%;
+            border:transparent;
+            border-top: dotted blueviolet 0.4em;
+        }
+
+        input[type=text]{
+            width: 100%;
+            /*box-sizing: border-box; /*el cuadro de texto no se sale de la ventana*/
+            border: 0.1em solid lightskyblue;
+            border-radius: 0.5em;
+        }
+
+        .container{
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 1em;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Registro de Artículos</h1>
+    <p>Rellena el formulario para añadir un artículo a la tabla PRODUCTOS de la bbdd pruebas.</p>
+
+    <hr>
+
+    <div class="container">
+        <form name="form1" action="insertar_registros.php" method="get">
+
+            <label>Código Artículo</label><input type="text" name="c_art">
+            <label>Sección</label><input type="text" name="seccion">
+            <label>Nombre Artículo</label><input type="text" name="n_art">
+            <label>Precio</label><input type="text" name="precio">
+            <label>Fecha</label><input type="text" name="fecha">
+            <label>Importado</label><input type="text" name="importado">
+            <label>País de Origen</label><input type="text" name="p_orig">
+
+            <br><br>
+
+            <input type="submit" name="enviar" value="Enviar">
+            <input type="reset" name="borrar" value="Borrar">
+        </form>
+    </div>
+
+</body>
+</html>
