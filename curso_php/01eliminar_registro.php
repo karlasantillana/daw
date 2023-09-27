@@ -29,7 +29,15 @@
     if($resultados==false){
         echo "Error en la consulta.";
     }else{
-        echo "Registro eliminado <br><br>";
+        //echo "Registro eliminado <br><br>";
+
+        //echo mysqli_affected_rows($conexion);
+
+        if(mysqli_affected_rows($conexion)==0){
+            echo "No hay registros que eliminar con ese criterio.";
+        }else{
+            echo "Se han elimnado " . mysqli_affected_rows($conexion) . " registros.";
+        }
     }
 
 
