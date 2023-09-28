@@ -8,7 +8,7 @@ cd [nombre carpeta] --> entrar a carpeta
 //En la máquina donde quiero subir los cambios
 --> git status
 --> git add . (selecciona todos los archivos que hayan cambiado)
---> git commit -m "Primera subida" guarda la seleccion
+--> git commit -m "Primera subida" --> guarda la seleccion
 --> git push --> actualizar cambios (si es el primer push --set-upstream [url])
 
 
