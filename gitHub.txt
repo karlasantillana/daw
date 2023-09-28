@@ -2,6 +2,7 @@ git init (inicia el archivo git) --> crear un repositorio nuevo o reiniciar uno 
 o
 git clone [url] --> en la máquina donde quiero clonar
 
+cd .. --> volver carpeta atrás
 
 //En la máquina donde quiero subir los cambios
 --> git status
