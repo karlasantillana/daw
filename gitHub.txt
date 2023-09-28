@@ -3,6 +3,7 @@ o
 git clone [url] --> en la máquina donde quiero clonar
 
 cd .. --> volver carpeta atrás
+cd [nombre carpeta] --> entrar a carpeta
 
 //En la máquina donde quiero subir los cambios
 --> git status
